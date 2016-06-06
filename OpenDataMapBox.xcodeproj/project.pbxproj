@@ -13,6 +13,7 @@
 		55782E721D05828600EB56CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55782E711D05828600EB56CB /* Assets.xcassets */; };
 		55782E751D05828600EB56CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55782E731D05828600EB56CB /* LaunchScreen.storyboard */; };
 		55782E801D05828600EB56CB /* OpenDataMapBoxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55782E7F1D05828600EB56CB /* OpenDataMapBoxUITests.swift */; };
+		972F4788ECDFC385523E7C51 /* Pods_OpenDataMapBox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B19E47C2D9241845980D92 /* Pods_OpenDataMapBox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +27,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1EE44F210D8729116F7BF83B /* Pods_OpenDataMapBoxUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenDataMapBoxUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CF2AF53D2348DE56F9B09B3 /* Pods-OpenDataMapBox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenDataMapBox.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OpenDataMapBox/Pods-OpenDataMapBox.debug.xcconfig"; sourceTree = "<group>"; };
 		55782E671D05828600EB56CB /* OpenDataMapBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenDataMapBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55782E6A1D05828600EB56CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55782E6C1D05828600EB56CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +39,8 @@
 		55782E7B1D05828600EB56CB /* OpenDataMapBoxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenDataMapBoxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55782E7F1D05828600EB56CB /* OpenDataMapBoxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenDataMapBoxUITests.swift; sourceTree = "<group>"; };
 		55782E811D05828600EB56CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4B19E47C2D9241845980D92 /* Pods_OpenDataMapBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenDataMapBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6FBCA9E16B07C922DEA6067 /* Pods-OpenDataMapBox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenDataMapBox.release.xcconfig"; path = "Pods/Target Support Files/Pods-OpenDataMapBox/Pods-OpenDataMapBox.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				972F4788ECDFC385523E7C51 /* Pods_OpenDataMapBox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +68,8 @@
 				55782E691D05828600EB56CB /* OpenDataMapBox */,
 				55782E7E1D05828600EB56CB /* OpenDataMapBoxUITests */,
 				55782E681D05828600EB56CB /* Products */,
+				8BEDF30D4DD503FA83022CD5 /* Pods */,
+				9F868E89141067B5462A1982 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +104,24 @@
 			path = OpenDataMapBoxUITests;
 			sourceTree = "<group>";
 		};
+		8BEDF30D4DD503FA83022CD5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3CF2AF53D2348DE56F9B09B3 /* Pods-OpenDataMapBox.debug.xcconfig */,
+				E6FBCA9E16B07C922DEA6067 /* Pods-OpenDataMapBox.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9F868E89141067B5462A1982 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4B19E47C2D9241845980D92 /* Pods_OpenDataMapBox.framework */,
+				1EE44F210D8729116F7BF83B /* Pods_OpenDataMapBoxUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +129,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 55782E841D05828600EB56CB /* Build configuration list for PBXNativeTarget "OpenDataMapBox" */;
 			buildPhases = (
+				19E52B5A2C6F36CF5893CF7D /* [CP] Check Pods Manifest.lock */,
 				55782E631D05828600EB56CB /* Sources */,
 				55782E641D05828600EB56CB /* Frameworks */,
 				55782E651D05828600EB56CB /* Resources */,
+				17B0B29BA46E9575B231D52B /* [CP] Embed Pods Frameworks */,
+				1BAC81ABFB8785251919B77E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -192,6 +221,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17B0B29BA46E9575B231D52B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenDataMapBox/Pods-OpenDataMapBox-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		19E52B5A2C6F36CF5893CF7D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1BAC81ABFB8785251919B77E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenDataMapBox/Pods-OpenDataMapBox-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		55782E631D05828600EB56CB /* Sources */ = {
@@ -326,6 +403,7 @@
 		};
 		55782E851D05828600EB56CB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CF2AF53D2348DE56F9B09B3 /* Pods-OpenDataMapBox.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -338,6 +416,7 @@
 		};
 		55782E861D05828600EB56CB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6FBCA9E16B07C922DEA6067 /* Pods-OpenDataMapBox.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -389,6 +468,7 @@
 				55782E861D05828600EB56CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		55782E871D05828600EB56CB /* Build configuration list for PBXNativeTarget "OpenDataMapBoxUITests" */ = {
 			isa = XCConfigurationList;
@@ -397,6 +477,7 @@
 				55782E891D05828600EB56CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
